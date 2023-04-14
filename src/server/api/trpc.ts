@@ -58,6 +58,8 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
   });
 };
 
+//? export const createRouter = () => trpc.router<context>()
+
 /**
  * 2. INITIALIZATION
  *

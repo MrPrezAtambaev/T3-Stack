@@ -21,11 +21,11 @@ model Example {
 }
 
 model Todo {
-    id          String  @id @default(cuid())
-    title       String
-    description String?
-    authorId    String
-    author      User    @relation(fields: [authorId], references: [id])
+    id        String  @id @default(cuid())
+    title     String
+    completed Boolean
+    authorId  String
+    author    User    @relation(fields: [authorId], references: [id])
 }
 
 //? Necessary for Next auth
